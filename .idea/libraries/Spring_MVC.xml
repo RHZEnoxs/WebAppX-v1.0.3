@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="Spring MVC">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-aop-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-aspects-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-beans-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-context-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-context-indexer-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-context-support-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-core-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-expression-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-instrument-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-jcl-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-jdbc-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-jms-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-messaging-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-orm-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-oxm-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-test-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-tx-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-web-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-webflux-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-webmvc-5.0.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Spring MVC/spring-websocket-5.0.1.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

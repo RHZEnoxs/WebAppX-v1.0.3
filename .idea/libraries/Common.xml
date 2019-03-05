@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Common">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/Common/asm-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Common/c3p0-0.9.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Common/cglib-3.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Common/commons-fileupload-1.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Common/commons-io-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Common/hibernate-c3p0-5.2.10.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Common/javassist-3.22.0-CR2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Common/mchange-commons-java-0.2.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Common/ognl-3.1.15.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

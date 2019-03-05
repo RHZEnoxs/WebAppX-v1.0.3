@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+    					http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+		version="2.1">
+
+	<!-- 描述 自定義標籤版本的一種描述 -->
+	<description>Pager 1.0 core library</description>
+	<!-- 顯示的名稱 導包進行的一個展示 -->
+	<display-name>Pager core</display-name>
+	<!-- 版本號 -->
+	<tlib-version>1.0</tlib-version>
+	<!-- 短名 -->
+	<short-name>fkjava</short-name>
+	<!-- uri ：導包 -->
+	<uri>/pager-tags</uri>
+
+	<!-- 定義一個標籤 -->
+	<tag>
+		<!-- 標籤名 -->
+		<name>pager</name>
+		<!-- 標籤處理類 -->
+		<tag-class>org.fkit.hrm.util.tag.PagerTag</tag-class>
+		<!-- 設置標籤為空 -->
+		<body-content>empty</body-content>
+
+		<!-- 定義標籤的屬性 -->
+		<attribute>
+			<!-- 屬性名 表示分頁的第幾頁 -->
+			<name>pageIndex</name>
+			<!-- 必須的 -->
+			<required>true</required>
+			<!-- run time expression value 為true支持EL表達式 -->
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<!-- 定義標籤的屬性 -->
+		<attribute>
+			<!-- 屬性名 表示分頁標籤 ，每頁顯示多少條數據 -->
+			<name>pageSize</name>
+			<!-- 必須的 -->
+			<required>true</required>
+			<!-- run time expression value 為true支持EL表達式 -->
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<!-- 定義標籤的屬性 -->
+		<attribute>
+			<!-- 屬性名  記錄分頁的總數 -->
+			<name>recordCount</name>
+			<!-- 必須的 -->
+			<required>true</required>
+			<!-- run time expression value 為true支持EL表達式 -->
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<!-- 定義標籤的屬性 -->
+		<attribute>
+			<!-- 屬性名 -->
+			<name>submitUrl</name>
+			<!-- 必須的 -->
+			<required>true</required>
+			<!-- run time expression value 為true支持EL表達式 -->
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<!-- 定義標籤的屬性 -->
+		<attribute>
+			<!-- 屬性名 -->
+			<name>style</name>
+			<!-- 必須的 -->
+			<required>false</required>
+			<!-- run time expression value 為true支持EL表達式 -->
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

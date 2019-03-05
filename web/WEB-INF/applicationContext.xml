@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:p="http://www.springframework.org/schema/p"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xmlns:tx="http://www.springframework.org/schema/tx"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+			            http://www.springframework.org/schema/beans/spring-beans.xsd
+			            http://www.springframework.org/schema/context
+			            http://www.springframework.org/schema/context/spring-context.xsd
+			            http://www.springframework.org/schema/mvc
+			            http://www.springframework.org/schema/mvc/spring-mvc.xsd
+			            http://www.springframework.org/schema/tx
+			            http://www.springframework.org/schema/tx/spring-tx.xsd
+			            http://mybatis.org/schema/mybatis-spring 
+			            http://mybatis.org/schema/mybatis-spring.xsd ">
+
+	<!-- mybatis:scan會掃瞄org.fkit.dao包裡的所有接口當作Spring的bean配置，之後可以進行依賴注入-->
+	<mybatis:scan base-package="org.fkit.hrm.dao"/>
+
+	<!-- 掃瞄org.fkit包下面的java文件，有Spring的相關註解的類，則把這些類註冊為Spring的bean -->
+	<context:component-scan base-package="org.fkit.hrm"/>
+
+	<!-- 使用PropertyOverrideConfigurer後處理器加載數據源參數 -->
+	<context:property-override location="classpath:db.properties"/>
+
+	<!-- 配置c3p0數據源 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"/>
+
+	<!-- 配置SqlSessionFactory，org.mybatis.spring.SqlSessionFactoryBean是Mybatis社區開發用於整合Spring的bean -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+		  p:dataSource-ref="dataSource"/>
+
+	<!-- JDBC事務管理器 -->
+	<bean id="transactionManager"
+		  class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+		  p:dataSource-ref="dataSource"/>
+
+	<!-- 啟用支持annotation註解方式事務管理 -->
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+
+</beans>
