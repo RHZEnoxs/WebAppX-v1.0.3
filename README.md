@@ -7,6 +7,15 @@ Web Spring MVC Framework X Version 1.0.3 ( Spring + MyBatis - 實戰項目 : 人
 
 ![login#2](assets/login02.png)
 
+## Project Setting 
+
++ Use MySQL DataBase
+    + db/ - SQL
+    + src/db.properties - database config
++ IDE - Import Project
+    + [參考資料](https://github.com/RHZEnoxs/Document/blob/master/Intellij/Import_Project_SpringMVC.md)
+
+
 
 
 ## 參考資料來源
